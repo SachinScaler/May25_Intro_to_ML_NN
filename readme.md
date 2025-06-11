@@ -463,3 +463,664 @@ What does it mean if the residuals versus predicted values plot shows a nonlinea
 - [x] The assumption of linearity is violated.
 - [ ] The model suffers from multicollinearity.
 
+### 5. ML: Linear Regression-4
+
+---
+title: Quiz 1
+description:
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+How does multicollinearity affect regression analysis ?
+
+# Choices
+- [x] It reduces the interpretability of regression coefficients.
+- [ ] It increases the accuracy of the regression model.
+- [ ] It improves the goodness-of-fit of the regression model.
+- [ ] It has no impact on the regression analysis.
+
+
+---
+title: Quiz 2
+description:
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+A clothing store wants to predict sales based on factors like price, promotions, and store location.
+Which assumption of linear regression is important for accurate sales predictions?
+
+# Choices
+- [x] Linearity between the independent variables and sales.
+- [ ] Normal distribution of sales.
+- [ ] MultiCollinearity among features
+- [ ] All of them
+
+
+---
+title: Quiz 3
+description:
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+While building a risk prediction model for loan defaulters, it was observed that the erros were right skewed.
+Does this imply anyway that the linear regression model is inaccurate?
+
+# Choices
+- [ ] Yes, since the features are multi-collinear
+- [x] Yes, since the errors aren’t normaly distributed
+- [ ] Yes, by violation of assumption of linearity
+- [ ] No, the model may be accurate.
+
+---
+title: Quiz 4
+description:
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+Which diagnostic plot can be used to detect heteroscedasticity?
+
+# Choices
+- [x] Scatterplot of residuals against predicted values.
+- [ ] Histogram of residuals.
+- [ ] Normal probability plot of residuals.
+- [ ] Box plot of residuals.
+
+
+---
+title: Quiz 5
+description:
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+In linear regression, a high VIF value suggests:
+
+# Choices
+- [ ] Heteroskedasticity is present
+- [ ] A strong linear relationship between the independent and dependent variables.
+- [ ] The absence of outliers in the dataset.
+- [x] Strong multicollinearity between predictor variables.
+
+
+#### 6. ML: Polyomial Regression, Bias-Variance
+**Mini-Batch Gradient code** - (Post Read)
+
+PostRead- Link: https://colab.research.google.com/drive/1EXhY2Ax1lPp7cc03bHvwtc-UQ78t6iKI?usp=sharing
+
+
+---
+title: Quiz 1
+description: 
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+
+Which statement is true about mini-batch gradient descent?
+
+# Choices
+- [ ]  It guarantees convergence to the global minima
+- [x] It may converge to a local minima due to the weight fluctuations
+- [ ] It requires a very high learning rate.
+- [ ] It is not suitable for large datasets.
+
+
+---
+title: Quiz 2
+description: 
+duration: 45
+card_type: quiz_card
+---
+
+
+# Question
+
+What is the degree of a polynomial in polynomial regression?
+
+# Choices
+- [ ]  The number of features in the dataset.
+- [ ] The number of training examples in the dataset.
+- [x] The highest power of the feature in the polynomial equation.
+- [ ] The number of coefficients in the polynomial equation.
+
+---
+title: Quiz 3
+description: 
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+
+What metric should be used during Polynomial Regression ?
+
+# Choices
+- [ ] R-sq
+- [x] Adj R-sq
+- [ ] Doesnt matter
+- [ ] Use a different metric
+
+
+---
+title: Quiz 4
+description:
+duration: 45
+card_type: quiz_card
+---
+
+
+# Question
+
+Why is Occam's Razor important in machine learning?
+
+# Choices 
+- [ ] It helps in selecting the model that fits the training data perfectly.
+- [ ] It encourages the use of complex models.
+- [x] It helps in avoiding overfitting by favoring simpler models.
+- [ ] It promotes the use of large datasets for training models.
+
+---
+title: Quiz 5
+description: 
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+
+Does the model LR = 5*f1 + 0*f1^2 + 0*f1^2 + 0*f1^4 underfit, overfit ?
+
+# Choices
+
+- [x] Underfit
+- [ ] Overfit
+
+---
+title: Quiz 6
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+If model has train perf = 90% and test perf = 91%, then:
+
+# Choices
+- [ ] Model is overfitting
+- [ ] Model is Underfitting
+- [x] Model is Perfectly fitting
+- [ ] Cant say
+
+
+#### 7. Regularization and Cross Validation
+
+
+---
+title: Quiz 1
+description:
+duration: 45
+card_type: quiz_card
+---
+
+
+# Question
+What is the role of $\lambda$ in preventing overfitting?
+# Choices
+- [ ] It increases overfitting
+- [ ] It decreases underfitting
+- [x] It helps find the optimal trade-off
+- [ ] It has no impact on overfitting
+
+---
+title: Quiz 2
+description:
+duration: 45
+card_type: quiz_card
+---
+
+
+# Question
+In which regularization technique two regularization constant lambda are used?
+
+# Choices
+- [ ] L1 regularization
+- [ ] L2 regularization
+- [x] Elastic Net regularization
+- [ ] All of the above
+
+---
+title: Quiz 3
+description: 
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+What would a lambda/regularization rate value of 0 signify?
+
+# Choices
+
+- [x] Complex and overfitting
+- [ ] Complex and underfitting
+- [ ] Simple and overfitting
+
+---
+title: Quiz 4
+description: 
+duration: 45
+card_type: quiz_card
+---
+
+
+# Question
+What would be the optimal value of lambda?
+Note: adj. R2 score is on test data
+
+# Choices
+
+- [ ] Model M1, lambda=1, adj. R2 score=0.4
+- [x] Model M2, lambda=10, adj. R2 score=0.8
+- [ ] Model M3, lambda=100, adj. R2 score=0.2
+
+---
+title: Quiz 5
+description: 
+duration: 60
+card_type: quiz_card
+---
+
+# Question
+A company is building a predictive model for predicting customer churn. Which technique can help optimize the model's performance for selecting the best hyperparameters and evaluating its generalization ability?
+
+# Choices
+
+- [ ] Sampling
+- [ ] Feature selection.
+- [ ] Ensemble learning.
+- [x] Hyperparameter tuning using Cross-validation.
+---
+title: Quiz 6
+description: 
+duration: 60
+card_type: quiz_card
+---
+
+
+# Question
+How do we compute performance metric of a model computed in k-fold cross-validation?
+
+# Choices
+
+- [x] Taking the mean of metric obtained from each fold.
+- [ ] Selecting the max value of metric obtained from each folds.
+- [ ] Summing the performance metrics of each fold.
+- [ ] Calculating the median of k different performance metrics.
+
+### 8. ML: Logistic Regression-1
+
+---
+title: Quiz 1
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+What happens when the input to the sigmoid function is a very large negative value?
+
+# Choices
+- [ ]  The output becomes negative
+- [x] The output approaches 0
+- [ ] The output approaches 1
+- [ ] The output becomes undefined.
+
+---
+title: Quiz 2
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+<img src="https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/036/478/original/image_2023-06-09_145616657.png?1686302778" width=700>
+
+<br><br>
+
+Which point will have a higher probability of belonging to class 1?
+
+# Choices
+- [x] x1
+- [ ] x2
+---
+title: Quiz 3
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+Supposedly your y = 0 and ŷ = 0.01 , so what be the log-loss ?
+
+# Choices
+- [ ] log-loss will be a very high value
+- [x] log-loss will be a very low value
+- [ ] log-loss will be 0
+
+---
+title: Quiz 4
+description:
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+In logistic regression, the output of the sigmoid function is interpreted as:
+
+# Choices
+- [x] Class probabilities 
+- [ ] Raw scores
+- [ ] Error rates
+- [ ] Regression coefficients
+
+
+---
+title: Quiz 5
+description: 
+duration: 60
+card_type: quiz_card
+---
+
+# Question
+What is the main risk of overfitting when tuning hyperparameters in logistic regression?
+
+
+# Choices
+- [ ] The model may generalize well to unseen data but poorly on the training data
+- [x]  The model may perform well on the training data but poorly on unseen data
+- [ ]  The model may underperform compared to a model with default hyperparameter values
+- [ ]  The model may be too simple and fail to capture complex relationships in the data
+
+
+---
+title: Quiz 6
+description:
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+Which statement about the step function is true?
+
+# Choices
+- [ ] It is continuous and differentiable
+- [ ] It is continuous but not differentiable
+- [x] It is neither continuous nor differentiable
+- [ ] It is differentiable but not continuous
+
+### 9. ML: Logistic Regression-2
+
+
+
+---
+title: Quiz 1
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+What is the effect of increasing the regularization rate (C) in logistic regression?
+
+
+# Choices
+- [ ] The model becomes less prone to overfitting
+- [ ] The model's training accuracy increases
+- [x] The model becomes more prone to overfitting
+- [ ] The model's test accuracy increases
+
+
+
+---
+title: Quiz 2
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+The logistic regression model predicts:
+
+# Choices
+- [x] Probabilities
+- [ ] Class labels
+- [ ] Continuous values
+- [ ] Ordinal values
+
+---
+title: Quiz 3
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+How are log odds transformed into probabilities in logistic regression?
+
+
+# Choices
+- [x] By applying the sigmoid function
+- [ ] By taking the exponential function
+- [ ] By dividing by the odds ratio
+- [ ] By subtracting the intercept term
+
+
+---
+title: Quiz 4
+description:
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+How do outliers affect the classification boundaries in logistic regression?
+
+
+# Choices
+
+- [x] Outliers shift the classification boundaries closer to the outlier values
+- [ ] Outliers have no effect on the classification boundaries
+- [ ] Outliers widen the gap between the classification boundaries
+- [ ] Outliers make the classification boundaries more sensitive to minor changes
+
+---
+title: Quiz 5
+description:
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+What is the purpose of the one-vs-rest (OvR) strategy in multi-class logistic regression?
+
+
+# Choices
+
+- [ ] To improve the interpretability of the model coefficients
+- [ ] To handle imbalanced datasets in multi-class problems
+- [ ] To reduce the complexity of the model
+- [x] To transform a multi-class problem into multiple binary classification problems
+
+---
+title: Quiz 6
+description:
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+How is the loss function typically defined in multi-class logistic regression?
+
+
+# Choices
+
+- [x] Cross-entropy loss
+- [ ] Mean squared error (MSE)
+- [ ] Mean absolute error (MAE)
+- [ ] Hinge loss
+
+###  10. ML: Classification Metrics (CM)
+
+
+---
+title: Quiz 1
+description: Quiz 1
+duration: 60
+card_type: quiz_card
+---
+
+# Question
+if data1: 20 Cancer Patients and 100 non-Cancer Patients and data2: 80 Cancer Patients 100 non-Cancer Patients, then:
+
+# Choices
+
+- [x] Data1 = Imbalance, Data2 = balance
+- [ ] Data1 = balance, Data2 = Imbalance
+- [ ] Data1 = balance, Data2 = balance
+- [ ] Data1 = Imbalance, Data2 = Imbalance
+
+---
+title: Quiz 2
+description: Quiz 2
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+In the evaluation of a classification model, what does the accuracy metric represent?
+
+# Choices
+
+- [ ] The model's ability to handle imbalanced datasets
+- [ ] The precision of the model in predicting positive instances
+- [ ] The ratio of true positive predictions to the total predictions
+- [x] The overall correctness of the model's predictions across all classes
+
+
+---
+title: Quiz 3
+description:
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+if model classifies students into classes A,B and C , then Confusion matrix looks like ?
+
+# Choices
+
+- [ ] 12 x 12
+- [ ] 2 x 2
+- [ ] 4 x 4
+- [x] 3 X 3
+
+---
+title: Quiz 4
+description: 
+duration: 60
+card_type: quiz_card
+---
+
+# Question
+For Ideal Model, which of the following is true?
+
+# Choices
+
+- [x] FP and FN ⇓, while TP and TN ⇑
+- [ ] TP and TN ⇓, while FP and FN ⇑
+- [ ] TP and FN ⇓, while FP and TN ⇑
+- [ ] FP and TN ⇓, while TP and FN ⇑
+
+
+---
+title: Quiz 5
+description: 
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+Based on the Confusion matrix we saw, what is the total number of erroneous points?
+
+<center><img src='https://d2beiqkhq929f0.cloudfront.net/public_assets/assets/000/061/916/original/z.png?1705234453' width=800></center>
+
+# Choices
+
+- [ ] 31
+- [x] 88
+- [ ] 106
+- [ ] 1187
+
+---
+title: Quiz 6
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+For movie recommendation, what would you prioritize more in this case?
+
+
+# Choices
+
+- [ ] High recall
+- [x] High precision
+
+
+---
+title: Quiz 7
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+For spam email filtering, what would you prioritize more in this case?
+
+
+# Choices
+
+- [ ]  recall
+- [x]  precision
+
+---
+title: Quiz 8
+description: 
+duration: 60
+card_type: quiz_card
+---
+
+# Question
+Why does the F-1 score use Harmonic Mean (HM) instead of Arithmetic Mean (AM) ?
+
+
+# Choices
+
+- [ ] AM penalizes models the most when even Precision and Recall are low.
+- [x] HM penalizes models the most when even Precision and Recall are low.
+- [ ] HM penalizes models the most when even Precision and Recall are high.
+- [ ] AM penalizes models the most when even Precision and Recall are high.
+
+
+#### **PostRead**: [FBeta_score](https://colab.research.google.com/drive/1_FymJlX0SjSuKpYrEueMesop0UfKOh9n?ouid=108305148241143911482&usp=drive_link)
+
