@@ -1,5 +1,6 @@
-All Quizzes
+# All Quizzes
 
+### 1. Intro to ML 
 ---
 title: Quiz 1
 description: 
@@ -132,3 +133,95 @@ What type of system are you more likely to recommend?
 - [ ] an unsupervised machine learning system that clusters together the best candidates.
 - [ ] you would not recommend a machine learning system for this type of project.
 - [x] a supervised machine learning system that classifies applicants into existing groups.
+
+### 2. ML: Linear Regression-1
+
+---
+title: Quiz 1
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+What do you think about the nature of Car Resale price prediction?
+
+# Choices
+- [x] Regression
+- [ ] Classification
+- [ ] Clustering
+
+
+
+---
+title: Quiz 2
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+How do you think we should handle the large number of categories in make and model column?
+
+# Choices
+- [ ] One Hot Encoding
+- [ ] Label Encoding
+- [x] Target Variable Encoding
+
+
+
+
+---
+title: Quiz 3
+description: 
+duration: 30
+card_type: quiz_card
+---
+
+# Question
+
+If your data contains d features, how many dimensions will be required to fit the hyperplane through that data?
+
+# Choices
+- [ ] D
+- [x] D + 1
+- [ ] D - 1
+- [ ] 2 * D
+
+
+---
+title: Quiz 4
+description: 
+duration: 45
+card_type: quiz_card
+---
+
+# Question
+
+In linear regression, if the MSE value is 0, it indicates:
+
+# Choices
+
+- [x] The predicted values perfectly match the actual values.
+- [ ] The model has no predictive power and fails to explain the dependent variable.
+- [ ] The model has high bias and underfits the data.
+- [ ] The model has high variance and overfits the data.
+
+
+
+---
+title: Quiz 5
+description:
+duration: 45
+card_type: quiz_card
+---
+# Question
+In a multiple linear regression with five features, the coefficient of determination R2 is found to be 0.85. What does this value indicate about the model's performance?
+
+# Choices
+- [x] The model explains 85% of the variation in the target variable
+- [ ] The model's predictions are 85% accurate
+- [ ] The model has an 85% probability of making correct predictions
+- [ ] The model is 85% confident in its predictions
+
+
